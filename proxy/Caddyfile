@@ -1,1 +1,8 @@
+{
+  email webmaster@jdshannon.com
+}
+
+jdshannon.com {
+  respond "Proxy is up. Site not configured yet."
+}
 

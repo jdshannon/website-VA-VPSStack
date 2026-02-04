@@ -1,1 +1,14 @@
+version: "3.9"
+
+services:
+  openclaw:
+    image: openclaw/openclaw:latest
+    restart: unless-stopped
+    environment:
+      - OPENCLAW_ENV=production
+    networks:
+      - openclaw_net
+
+networks:
+  openclaw_net:
 

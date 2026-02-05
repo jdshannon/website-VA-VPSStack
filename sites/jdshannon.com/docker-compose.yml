@@ -15,7 +15,8 @@ services:
       - internal
 
   wordpress:
-    image: wordpress:php8.2-fpm
+    image: wordpress:latest
+    container_name: wp_jdshannon
     restart: unless-stopped
     environment:
       WORDPRESS_DB_HOST: db

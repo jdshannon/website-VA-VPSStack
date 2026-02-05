@@ -16,4 +16,4 @@ and an OpenClaw virtual assistant on a single VPS.
 - Containers are disposable; volumes are not
 
 This repository intentionally contains no production secrets.
-jdshannon.com site working
+jdshannon.com site wordpress at installer

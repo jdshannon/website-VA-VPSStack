@@ -17,4 +17,4 @@ and an OpenClaw virtual assistant on a single VPS.
 
 This repository intentionally contains no production secrets.
 jdshannon.com site wordpress at installer.
-testing ssh automation
+testing ssh automation 2

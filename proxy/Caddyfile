@@ -2,7 +2,7 @@
   email webmaster@jdshannon.com
 }
 
-jdshannon.com {
-  respond "Proxy is up. Site not configured yet."
+jdshannon.com, www.jdshannon.com {
+  reverse_proxy wp_jdshannon:80
 }
 

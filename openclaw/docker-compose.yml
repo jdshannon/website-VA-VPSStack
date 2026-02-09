@@ -1,7 +1,7 @@
 
 services:
   openclaw:
-    image: openclaw/openclaw:latest
+    image: ghcr.io/phioranex/openclaw-docker:latest
     restart: unless-stopped
     environment:
       - OPENCLAW_ENV=production

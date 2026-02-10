@@ -20,7 +20,11 @@ services:
       OPENCLAW_DATA_PATH: ${OPENCLAW_DATA_PATH}
 
     # ✅ Start the gateway instead of "--help"
-    command: ["gateway", "--port", "${OPENCLAW_PORT}"]
+    command:
+      - gateway
+      - --port
+      - "${OPENCLAW_PORT}"
+      - --allow-unconfigured
 
       # Optional, only if your OpenClaw build uses it:
       # OPENCLAW_API_KEY: ${OPENCLAW_API_KEY}

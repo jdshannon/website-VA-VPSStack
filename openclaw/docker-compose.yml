@@ -19,6 +19,8 @@ services:
 
       OPENCLAW_DATA_PATH: ${OPENCLAW_DATA_PATH}
 
+      OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
+
     # ✅ Start the gateway instead of "--help"
     command:
       - gateway

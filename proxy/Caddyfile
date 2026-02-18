@@ -5,10 +5,3 @@
 jdshannon.com, www.jdshannon.com {
   reverse_proxy wp_jdshannon:80
 }
-
-openclaw.jdshannon.com {
-  basicauth {
-    {$OPENCLAW_AUTH_USER} {$OPENCLAW_AUTH_HASH}
-  }
-  reverse_proxy openclaw:{$OPENCLAW_PORT}
-}

@@ -30,6 +30,7 @@ services:
     networks:
       - proxy_net
       - n8n_internal
+      - automation_net
 
   n8n_postgres:
     image: postgres:16-alpine
@@ -48,6 +49,8 @@ networks:
   proxy_net:
     external: true
   n8n_internal:
+    driver: bridge
+  automation_net:
     driver: bridge
 
 volumes:

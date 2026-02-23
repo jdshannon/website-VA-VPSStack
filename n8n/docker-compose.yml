@@ -51,7 +51,7 @@ networks:
   n8n_internal:
     driver: bridge
   automation_net:
-    driver: bridge
+    external: true
 
 volumes:
   n8n_data:

@@ -26,6 +26,8 @@ services:
         "--port",
         "18789",
       ]
+    networks:
+      - automation_net
 
   openclaw-cli:
     image: ${OPENCLAW_IMAGE:-openclaw:local}
@@ -44,3 +46,9 @@ services:
     tty: true
     init: true
     entrypoint: ["node", "dist/index.js"]
+    networks:
+      - automation_net
+
+networks:
+  automation_net:
+    external: true

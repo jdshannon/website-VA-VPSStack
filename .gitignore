@@ -2,4 +2,7 @@
 **/.env
 **/backups
 **/uploads
-
+**/.env.*
+**/node_modules/
+**/data/
+**/logs/
